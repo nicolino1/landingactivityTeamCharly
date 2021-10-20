@@ -1,4 +1,134 @@
+:root{
+    --primary-ligth: #7dc3c5;
+    --primary: #014e58;
+    --primary-dark: #002528;
+  
+    --seconday: #f67e7f;
+  
+    --white: #fff;
+    --black: #000;
+  
+    --gray-light: #bbbbbb;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+  
+    --light: #f8f9fa;
+    --dark: #212529;
+}
+
 @viewport {
     zoom: 0.5;
     width: device-width;
+}
+body{
+    color: white;
+}
+/*---------------------------
+HEADER
+---------------------------*/
+main > div {
+    position: absolute;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--primary);
+}
+header > div {
+    margin-top: 2rem;
+}
+header > div:first-child > h1{
+    font-size: 2.8rem;
+    text-align: center;
+    margin: 0 25vw;
+}
+header > div:first-child > h1 > span{
+    color: var(--seconday);    
+}
+header > div:last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header > div:last-child > p {
+    margin: 0 10vw;
+}
+
+/*-------------------------
+HOME
+-------------------------*/
+
+#home{
+    background-color: var(--primary-dark);
+}
+#home > div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*-------------------------
+HOME DIV 1
+-------------------------*/
+
+#home > div:first-child > h2{
+    font-size: 2.2rem;
+    margin: 20vh 40vw 10vh 10vw;
+}
+#home > div:first-child > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 5vh 5vw;
+}
+#home > div:first-child > div > span{
+    color: var(--seconday);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+#home > div:first-child > div > p{
+    font-size: 1.1rem;
+}
+
+/*-------------------------------
+HOME DIV 2
+---------------------------------*/
+
+#home > div:nth-child(2) {
+    background-color: var(--primary);
+}
+#home > div:nth-child(2) > h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin: 20vh 10vw 10vh 10vw;
+}
+#home > div:nth-child(2) > h2 > span {
+    color: var(--primary-ligth);
+}
+#home > div:nth-child(2) > div{
+    margin: 5vh 5vw;
+}
+#home > div:nth-child(2) > div > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 10vh 0;
+}
+#home > div:nth-child(2) > div > div > span{
+    color: var(--primary-ligth);
+    font-weight: bold;
+    font-size: 1.4rem;
 }

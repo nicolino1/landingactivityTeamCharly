@@ -9,6 +9,7 @@ padding: 0;
 margin: 0;
 font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
 Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+color: black;
 }
 a {
 color: inherit;
@@ -18,106 +19,6 @@ text-decoration: none;
 box-sizing: border-box;
 }
 
-main > div {
-    display: flex;
-    font-family: var(--bs-font);
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    background-color: transparent;
-    z-index: 2;
-    
-}
 
-main > div > span {
-   position: relative;
-   font-size: 1.5rem;
-   font-weight: bold;
-   padding: 10px;
-   color: var(--bs-white);
-}
-
-main  > div > nav {
-   position: relative;
-   display: flex;
-}
-
-main  > div > nav > li{
-   list-style: none;
-   background-color: transparent;
-   margin-left: 10px;
-   padding: 15px;
-}
-
-
-main  > div > nav > li > a{
-   text-decoration: none;
-   font-weight: 700;
-   color: var(--bs-white);
-   text-transform: capitalize;
-   
-}
-
-main  > div > nav > li:last-child > a{
-   background-color: var(--bs-white);
-   font-size: small;
-   padding: 10px;
-   border-radius: 15px;
-   color: var(--bs-dark);
-   text-transform: uppercase;
-   
-}
-
-
-
- main > header {
-    z-index: 1;
- }
-
- main > div > a {
-    text-decoration: none;
-    color: var(--bs-white);
-    font-weight: bold;
-    font-size: var(--font-size-nav);
- }
-
-
-main > header {
-    position: relative;
-    display: flex;
-    color: var(--bs-white);
-    
-    justify-content: center;
-    background: none;
-    align-items: center;
-    height: 100vh;
-    font-size: var(--font-size-banner);
-    text-transform: uppercase;
-    user-select: none;
-    overflow: hidden;
-
-}
-
-main > header > div:first-child {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-main > header > div:last-child {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-}
-
-main > header > div:last-child > h1 {
-   font-size: 3rem;
-   font-weight: bold;
-   letter-spacing: 1rem;
-   text-align: center;
-}
 
 
