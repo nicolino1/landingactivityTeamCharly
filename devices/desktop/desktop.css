@@ -3,4 +3,292 @@
     width: device-width;
 }
 
+:root{
+    --primary-ligth: #7dc3c5;
+
+    --primary: #014e58;
+  
+    --primary-dark: #002528;
+  
+    --seconday: #f67e7f;
+  
+    --white: #fff;
+  
+    --black: #000;
+  
+    --gray-light: #bbbbbb;
+  
+    --gray: #6c757d;
+  
+    --gray-dark: #343a40;
+  
+    --light: #f8f9fa;
+  
+    --dark: #212529;
+}
+
+h2, h1, p {
+    padding: 0;
+    margin: 0;
+}
+
+main > div {
+    background-color: var(--primary);
+    display: flex;
+    font-family: var(--bs-font);
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    justify-content: space-around;
+    padding: 30px;
+    
+}
+
+main  > div > div:first-child {
+    display: flex;
+}
+main > div > div:first-child > span {
+   position: relative;
+   font-size: 1.5rem;
+   font-weight: bold;
+   padding: 10px;
+   color: var(--bs-white);
+}
+
+main  > div > div:first-child > nav {
+   position: relative;
+   display: flex;
+}
+
+main  > div > div:first-child > nav > li{
+   list-style: none;
+   background-color: transparent;
+   margin-left: 10px;
+   padding: 15px;
+}
+
+
+main  > div > div:first-child > nav > li > a{
+   text-decoration: none;
+   font-weight: 700;
+   color: var(--bs-white);
+   text-transform: capitalize;
+   
+}
+
+main  > div > div:last-child > button{
+   background-color: transparent;
+   font-size: small;
+   padding: 10px;
+   border: solid 1px white;
+   border-radius: 20px;
+   color: white;
+
+   
+}
+
+
+
+ main > header {
+    z-index: 1;
+ }
+
+ main > div > a {
+    text-decoration: none;
+    color: var(--bs-white);
+    font-weight: bold;
+    font-size: var(--font-size-nav);
+ }
+
+
+main > header {
+    background-color: var(--primary);
+    position: relative;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    user-select: none;
+    overflow: hidden;
+
+}
+
+main > header > div:first-child {
+    flex-basis: 40%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: -1;
+}
+
+main > header > div:first-child > h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+main > header > div:first-child > h1 > span{
+    color: var(--seconday)
+}
+
+main > header > div:last-child {
+   display: flex;
+   flex-basis: 50%;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+main > header > div:last-child > p {
+   font-weight: bold;
+   font-size: 1rem;
+   width: 50%;
+   text-align: center;
+}
+
+main > section > div:nth-child(1) {
+    height: 90vh;
+    display: flex;
+    background-color: var(--primary-dark);
+    color: white;
+    padding: 10%;
+}
+
+main > section > div:nth-child(1) > div {
+    flex-basis: 50%;
+    padding: 20px;
+}
+
+main > section > div:nth-child(1) > div:last-child > div{
+    display: flex;
+}
+
+main > section > div:nth-child(1) > div:last-child > div > div {
+    margin: 5px;
+}
+
+main > section > div:nth-child(1) > div:last-child > div > div > span {
+    color: var(--seconday);
+    font-size: large;
+    font-weight: bold;
+}
+
+main > section > div:nth-child(1) > div:last-child > div > div > p {
+    margin-top: 10px;
+}
+
+main > section > div:nth-child(2)  {
+    height: 90vh;
+    background-color: var(--primary);
+    color: white;
+    padding: 10%;
+    justify-content: center;
+    text-align: center;
+}
+
+main > section > div:nth-child(2) > h2  {
+    font-size: 2.5rem;
+    text-align:center;
+    margin-bottom: 20px;
+}
+
+main > section > div:nth-child(2) > h2 > span {
+    color: var(--primary-ligth)
+}
+
+main > section > div:nth-child(2) > div {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+main > section > div:nth-child(2) > div > div > p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+main > section > div:nth-child(2) > div > div > span {
+    color: var(--primary-ligth);
+    font-weight: bold;
+}
+
+main > section > div:nth-child(2) > div > div > img {
+    border-radius: 50%;
+    margin: auto;
+    border: 3px solid var(--primary-ligth);
+}
+
+main > section > div:nth-child(3)  {
+    display: flex;
+    height: 30vh;
+    background-color: var(--seconday);
+    color: var(--primary-dark);
+    justify-content: space-around;
+    align-items: center;
+}
+
+main > section > div:nth-child(3) > h2 {
+    font-size: 3rem;
+}
+
+main > section > div:nth-child(3) > button {
+   background-color: transparent;
+   font-size: large;
+   font-weight: bold;
+   padding: 10px;
+   border: solid 1.5px var(--primary-dark);
+   border-radius: 20px;
+   color: var(--primary-dark);
+
+}
+
+main > footer {
+    background-color: var(--primary-dark);
+    color: white;
+    display: flex;
+    height: 40vh;
+}
+
+main > footer > div {
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main > footer > div:nth-child(2) {
+    flex-basis: 50%;
+}
+
+ main > footer > div:first-child {
+    align-items: center;
+} 
+
+main > footer > div:first-child > h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+main > footer > div:first-child > div {
+    font-weight: bold;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+main > footer > div:nth-child(2){
+    color: var(--primary-ligth);
+    margin-left: 5%;
+}
+
+main > footer > div:nth-child(3){
+    align-items:flex-end;
+    justify-content: space-around;
+    margin-right: 5%;
+    color: var(--primary-ligth);
+}
+
+
 
