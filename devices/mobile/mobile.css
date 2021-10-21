@@ -23,16 +23,26 @@
 body{
     color: var(--white);
 }
+nav{
+    display: none;
+}
 /*---------------------------
 HEADER
 ---------------------------*/
-main > div {
+main > div:first-child {
     position: absolute;
     height: 10vh;
     width: 100vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+}
+main > div:first-child > div:first-child > span{
+    font-size: 2rem;
+    font-weight: bold;
+}
+main > div:first-child > *{
+    margin: 0 5vw;
 }
 header{
     height: 100vh;
@@ -41,6 +51,10 @@ header{
     align-items: center;
     flex-direction: column;
     background-color: var(--primary);
+    background-image: url("../../assets/icons/bg-pattern-home-2.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
 }
 header > div {
     margin-top: 2rem;
@@ -79,12 +93,18 @@ HOME
 /*-------------------------
 HOME DIV 1
 -------------------------*/
+#home > div:first-child{
+    background-image: url("../../assets/icons/bg-pattern-home-3.svg");
+    background-repeat: no-repeat;
+    background-position: 125% 0%;
+    background-size: 75%;
+}
 
-#home > div:first-child > h2{
+#home > div:first-child > div > h2{
     font-size: 2.2rem;
     margin: 20vh 40vw 10vh 10vw;
 }
-#home > div:first-child > div{
+#home > div:first-child > div:nth-child(2){
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,12 +112,12 @@ HOME DIV 1
     text-align: center;
     margin: 5vh 5vw;
 }
-#home > div:first-child > div > span{
+#home > div:first-child > div > div > div:nth-child(2) > span{
     color: var(--seconday);
     font-size: 1.2rem;
     font-weight: bold;
 }
-#home > div:first-child > div > p{
+#home > div:first-child > div > div > div > p{
     font-size: 1.1rem;
 }
 
@@ -127,6 +147,10 @@ HOME DIV 2
     flex-direction: column;
     text-align: center;
     margin: 10vh 0;
+}
+#home > div:nth-child(2) > div > div > img{
+    width: 20%;
+    border-radius: 50%;
 }
 #home > div:nth-child(2) > div > div > span{
     color: var(--primary-ligth);
@@ -172,20 +196,28 @@ footer{
     background-color: var(--primary-dark);
 }
 
-footer > h2{
+footer > div:first-child > h2{
+    text-align: center;
     font-weight: bold;
     margin: 10vh 0 5vh;
 }
 footer > *:not(h2){
     font-size: 1.2rem;
 }
+footer > div:nth-child(1) > div > span{
+    margin: 0 3vw;    
+}
 footer > div:nth-child(2){
     margin: 3vh 0;
 }
-footer > div:nth-child(2) > span{
-    margin: 0 3vw;    
+footer > div:nth-child(3) > div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5vh;
 }
-footer > p{
+
+footer > div > p{
     margin: 1vh;
     color: var(--gray-light);
 }
