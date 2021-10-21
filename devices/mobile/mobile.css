@@ -74,6 +74,7 @@ header > div:last-child{
     flex-direction: column;
 }
 header > div:last-child > p {
+    text-align: center;
     margin: 0 10vw;
 }
 
