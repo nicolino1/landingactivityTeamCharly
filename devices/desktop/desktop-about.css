@@ -1,0 +1,245 @@
+@viewport {
+    zoom: 1;
+    width: device-width;
+}
+
+:root{
+    --primary-ligth: #7dc3c5;
+
+    --primary: #014e58;
+
+    --primary-semi: #03363d;
+  
+    --primary-dark: #002528;
+  
+    --seconday: #f67e7f;
+  
+    --white: #fff;
+  
+    --black: #000;
+  
+    --gray-light: #bbbbbb;
+  
+    --gray: #6c757d;
+  
+    --gray-dark: #343a40;
+  
+    --light: #f8f9fa;
+  
+    --dark: #212529;
+}
+
+h2, h1, p {
+    padding: 0;
+    margin: 0;
+}
+
+main > div {
+    background-color: var(--primary);
+    display: flex;
+    font-family: var(--bs-font);
+    color: white;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    justify-content: space-around;
+    padding: 30px;
+    
+}
+
+main  > div > div:first-child {
+    display: flex;
+}
+main > div > div:first-child > span {
+   position: relative;
+   font-size: 1.5rem;
+   font-weight: bold;
+   padding: 10px;
+   color: var(--bs-white);
+}
+
+main  > div > div:first-child > nav {
+   position: relative;
+   display: flex;
+}
+
+main  > div > div:first-child > nav > li{
+   list-style: none;
+   background-color: transparent;
+   margin-left: 10px;
+   padding: 15px;
+}
+
+
+main  > div > div:first-child > nav > li > a{
+   text-decoration: none;
+   font-weight: 700;
+   color: var(--bs-white);
+   text-transform: capitalize;
+   
+}
+
+main  > div > div:last-child > button{
+   background-color: transparent;
+   font-size: small;
+   padding: 10px;
+   border: solid 1px white;
+   border-radius: 20px;
+   color: white;
+
+   
+}
+
+
+
+ main > header {
+    z-index: 1;
+ }
+
+ main > div > a {
+    text-decoration: none;
+    color: var(--bs-white);
+    font-weight: bold;
+    font-size: var(--font-size-nav);
+ }
+
+
+main > header {
+    background-color: var(--primary);
+    position: relative;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    user-select: none;
+    overflow: hidden;
+    background-image: url("/assets/icons/bg-pattern-about-1-mobile-nav-1.svg");
+    background-repeat: no-repeat;
+    background-position: 110% 100%;
+}
+
+main > header > div:first-child {
+    flex-basis: 40%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: -1;
+}
+
+main > header > div:first-child > h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-bottom: 25%;
+    margin-left: 15%;
+}
+
+main > header > div:first-child > h1 > span{
+    color: var(--seconday)
+}
+
+main > header > div:last-child {
+   display: flex;
+   flex-basis: 50%;
+   height: 100%;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+}
+
+main > header > div:last-child > p {
+   font-weight: bold;
+   font-size: 0.8rem;
+   width: 50%;
+   text-align:left;
+}
+
+main > section {
+    background-color: var(--primary-semi);
+    color: white;
+}
+
+main > section > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 100vh;
+
+}
+
+main > section > div > div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+
+}
+
+main > section > div > div > div{
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    padding: 10px;
+    margin: 3%;
+    background-color: var(--primary-dark);
+}
+
+main > section > div > div > div > span {
+    color: var(--primary-ligth);
+    font-weight: bold;
+}
+
+main > section > div > div > div > img {
+    border-radius: 50%;
+    width: 40%;
+
+    border: 3px solid var(--primary-ligth);
+}
+
+main > section > div > div > div > div {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    background-color:var(--seconday);
+    height: 7%;
+    width: 4%;
+    margin-top: 18%;
+}
+
+main > section > div > div > div > div > img {
+    margin: auto;
+
+    
+}
+
+main > footer {
+    background-color: var(--primary-dark);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+main > footer > div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 5%;
+}
+
+main > footer > div > img {
+
+    height: 25%;
+}

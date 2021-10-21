@@ -1,0 +1,3 @@
+@import url(./global/base.css);
+
+@import url(./devices/desktop/desktop-about.css) (min-width: 1000px);
