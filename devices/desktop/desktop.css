@@ -113,7 +113,9 @@ main > header {
     height: 100vh;
     user-select: none;
     overflow: hidden;
-
+    background-image: url("/assets/icons/bg-pattern-home-1.svg");
+    background-repeat: no-repeat;
+    background-position: -10% 30%;
 }
 
 main > header > div:first-child {
@@ -129,6 +131,7 @@ main > header > div:first-child > h1 {
     font-weight: bold;
     margin-left: 10%;
     margin-bottom: 25%;
+    margin-left: 15%;
 }
 
 main > header > div:first-child > h1 > span{
@@ -138,9 +141,13 @@ main > header > div:first-child > h1 > span{
 main > header > div:last-child {
    display: flex;
    flex-basis: 50%;
+   height: 100%;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   background-image: url("/assets/icons/bg-pattern-home-2.svg");
+   background-repeat: no-repeat;
+   background-position: bottom center;
 }
 
 main > header > div:last-child > p {
@@ -156,6 +163,9 @@ main > section > div:nth-child(1) {
     background-color: var(--primary-dark);
     color: white;
     padding: 10%;
+    background-image: url("/assets/icons/bg-pattern-home-3.svg");
+    background-repeat: no-repeat;
+    background-position: 110% 100%;
 }
 
 main > section > div:nth-child(1) > div {
@@ -187,12 +197,14 @@ main > section > div:nth-child(1) > div:last-child > div > div > p {
 }
 
 main > section > div:nth-child(2)  {
-    height: 90vh;
+    height: 100vh;
     background-color: var(--primary);
     color: white;
     padding: 10%;
     justify-content: center;
     text-align: center;
+    background-image: url("/assets/icons/bg-pattern-home-4-about-3.svg");
+    background-repeat: no-repeat;
 }
 
 main > section > div:nth-child(2) > h2  {
@@ -211,8 +223,14 @@ main > section > div:nth-child(2) > div {
     justify-content: space-between;
 }
 
-main > section > div:nth-child(2) > div > div > p {
-    margin-bottom: 20px;
+main > section > div:nth-child(2) > div > div {
+    background-image: url("/assets/icons/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+main > section > div:nth-child(2) > div > div > p:first-child {
+    margin: 30px;
     font-size: 14px;
 }
 
@@ -223,7 +241,9 @@ main > section > div:nth-child(2) > div > div > span {
 
 main > section > div:nth-child(2) > div > div > img {
     border-radius: 50%;
+    width: 20%;
     margin: auto;
+    margin-top: 15px;
     border: 3px solid var(--primary-ligth);
 }
 
@@ -295,6 +315,11 @@ main > footer > div:nth-child(3){
     justify-content: space-around;
     margin-right: 5%;
     color: var(--primary-ligth);
+}
+
+main > footer > div:nth-child(3) > div > img{
+    margin-right: 10px;
+    width: 20%;
 }
 
 
