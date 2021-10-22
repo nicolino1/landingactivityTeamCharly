@@ -1,7 +1,4 @@
-@viewport {
-    zoom: 1;
-    width: device-width;
-}
+
 
 :root{
     --primary-ligth: #7dc3c5;
@@ -148,6 +145,15 @@ main > header > div:last-child {
    background-position: bottom center;
 }
 
+main > header > div:last-child > div {
+    position: absolute;
+    background-color: var(--primary-ligth);
+    width: 3%;
+    height: 0.7%;
+    margin-right: 280px;
+    margin-bottom: 200px;
+}
+
 main > header > div:last-child > p {
    font-weight: bold;
    font-size: 0.8rem;
@@ -174,6 +180,13 @@ main > section > div:nth-child(1) > div {
 main > section > div:nth-child(1) > div:first-child {
     font-size: 1.5rem;
     padding-right: 15%;
+}
+main > section > div:nth-child(1) > div:first-child > div {
+
+    background-color: var(--seconday);
+    width: 10%;
+    height: 1%;
+    margin-bottom: 20px;
 }
 
 main > section > div:nth-child(1) > div:last-child > div{

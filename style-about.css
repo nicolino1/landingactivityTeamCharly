@@ -1,3 +1,5 @@
 @import url(./global/base.css);
 
 @import url(./devices/desktop/desktop-about.css) (min-width: 1000px);
+
+@import url(./devices/mobile/mobile-about.css) (max-width: 999px);

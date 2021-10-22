@@ -1,0 +1,4 @@
+@import url(./global/base.css);
+
+@import url(./devices/desktop/desktop-contact.css) (min-width: 1000px);
+@import url(./devices/mobile/mobile-contact.css) (max-width: 999px);
