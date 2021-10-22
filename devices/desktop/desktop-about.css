@@ -161,6 +161,10 @@ main > header > div:last-child > p {
 main > section {
     background-color: var(--primary-semi);
     color: white;
+    padding: 5%;
+    background-image: url("/assets/icons/bg-pattern-about-2-contact-1.svg");
+    background-repeat: no-repeat;
+    background-position: -10% 0%;
 }
 
 main > section > div {
@@ -169,6 +173,10 @@ main > section > div {
     justify-content: start;
     align-items: center;
     height: 100vh;
+}
+
+main > section > div > h2 {
+    font-size: 2rem;
 
 }
 
@@ -211,9 +219,9 @@ main > section > div > div > div > div {
     align-items: center;
     border-radius: 50%;
     background-color:var(--seconday);
-    height: 6%;
-    width: 3%;
-    margin-top: 18%;
+    height: 30px;
+    width: 30px;
+    margin-top: 200px;
 }
 
 main > section > div > div > div > div > img {
@@ -229,7 +237,11 @@ main > footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 40vh;
+    height: 60vh;
+    background-image: url("/assets/icons/bg-pattern-about-4.svg");
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 150px;
 }
 
 main > footer > div{
@@ -237,6 +249,10 @@ main > footer > div{
     justify-content: space-evenly;
     width: 100%;
     margin-top: 5%;
+}
+
+main > footer > h2{
+    font-size: 2rem;
 }
 
 main > footer > div > img {
