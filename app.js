@@ -242,9 +242,9 @@ const about = () => {
       `;
 };
 const routes = {
-  "/": "home",
-  "/contact": "contact",
-  "/about": "about",
+  "/": home(),
+  "/contact": contact(),
+  "/about": about(),
 };
 
 const rootDiv = document.getElementById("root");
