@@ -127,12 +127,12 @@ const contact = () => {
       </div>
       <div>
           <form>
-              <input placeholder="Name" type="text">
-              <input placeholder="Email Address" type="text">
-              <input placeholder="Company Name" type="text">
-              <input placeholder="Title" type="text">
-              <input placeholder="Message" type="text">
-              <button>submit</button>
+            <input type="text" id="user_name" placeholder="Name">
+            <input type="text" id="user_email" placeholder="Email">
+            <input type="text" id="user_company" placeholder="Company">
+            <input type="text" id="title" placeholder="Title">
+            <input type="text" id="message" placeholder="Message">
+            <button onclick="sendMail()">Submit</button>
           </form>
       </div>
   </div>
@@ -259,3 +259,22 @@ const onNavigate = (_pathname) => {
   window.history.pushState(null, _pathname, _pathname);
   rootDiv.innerHTML = routes[_pathname];
 };
+
+
+// EmailJS
+
+
+function sendMail(params){
+    var tempParams = {
+        user_name : document.getElementById("user_name").value,
+        user_email : document.getElementById("user_email").value,
+        user_company : document.getElementById("user_company").value,
+        title : document.getElementById("title").value,
+        message : document.getElementById("message").value,
+    }
+
+    emailjs.send(`service_dxt4ok8`, `contact_form`, tempParams)
+    .then(function(res){
+        console.log("success", res.status);
+    }) 
+}

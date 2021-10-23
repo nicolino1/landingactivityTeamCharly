@@ -20,7 +20,7 @@ nav{
 /*---------------------------
 HEADER
 ---------------------------*/
-.site-start > main > div:first-child {
+.site-start > div:first-child {
     position: absolute;
     height: 10vh;
     width: 100vw;
@@ -28,11 +28,11 @@ HEADER
     justify-content: space-between;
     align-items: center;
 }
-.site-start > main > div:first-child > div:first-child > span{
+.site-start > div:first-child > div:first-child > span{
     font-size: 2rem;
     font-weight: bold;
 }
-.site-start > main > div:first-child > *{
+.site-start > div:first-child > *{
     margin: 0 5vw;
 }
 .site-start > header{
@@ -228,7 +228,7 @@ CONTACT MOBILE
     margin: 0;
 }
 
-.contact > main > div {
+.contact > div {
     background-color: var(--primary);
     display: flex;
     font-family: var(--bs-font);
@@ -242,10 +242,10 @@ CONTACT MOBILE
     
 }
 
-.contact > main  > div > div:first-child {
+.contact  > div > div:first-child {
     display: flex;
 }
-.contact > main > div > div:first-child > span {
+.contact > div > div:first-child > span {
    position: relative;
    font-size: 1.5rem;
    font-weight: bold;
@@ -253,12 +253,12 @@ CONTACT MOBILE
    color: var(--bs-white);
 }
 
-.contact > main  > div > div:first-child > nav {
+.contact  > div > div:first-child > nav {
    position: relative;
    display: none;
 }
 
-.contact > main  > div > div:first-child > nav > li{
+.contact  > div > div:first-child > nav > li{
    list-style: none;
    background-color: transparent;
    margin-left: 10px;
@@ -266,7 +266,7 @@ CONTACT MOBILE
 }
 
 
-.contact > main  > div > div:first-child > nav > li > a{
+.contact  > div > div:first-child > nav > li > a{
    text-decoration: none;
    font-weight: 700;
    color: var(--bs-white);
@@ -274,7 +274,7 @@ CONTACT MOBILE
    
 }
 
-.contact > main  > div > div:last-child > button{
+.contact  > div > div:last-child > button{
    background-color: transparent;
    font-size: small;
    padding: 10px;
@@ -286,18 +286,18 @@ CONTACT MOBILE
 
 
 
-.contact > main > header {
+.contact > header {
     z-index: 1;
  }
 
-.contact > main > div > a {
+.contact > div > a {
     text-decoration: none;
     color: var(--bs-white);
     font-weight: bold;
     font-size: var(--font-size-nav);
  }
 
-.contact > main > section {
+.contact > section {
      background-color: var(--primary);
      display: flex;
      padding-bottom: 20px;
@@ -306,7 +306,7 @@ CONTACT MOBILE
 
  }
 
- .contact > main > section > div {
+ .contact > section > div {
      display: flex;
      flex-direction: column;
      width: 100vw;
@@ -317,7 +317,7 @@ CONTACT MOBILE
 
 
 
- .contact > main > section > div > div{
+ .contact > section > div > div{
 
     display: flex;
     flex-direction: column;
@@ -326,34 +326,34 @@ CONTACT MOBILE
     font-weight: bold;
 }
 
-.contact > main > section > div > div > h1{
+.contact > section > div > div > h1{
     font-size: 5rem;
 }
 
-.contact > main > section > div > div > span{
+.contact > section > div > div > span{
     color: var(--seconday);
     
     font-size: 1.5rem;
 }
 
-.contact > main > section > div > div > div{
+.contact > section > div > div > div{
     display: flex;
     align-items: center;
     margin-top: 15px;
 }
 
-.contact > main > section > div > div > div > p{
+.contact > section > div > div > div > p{
     margin-left: 10px;
 }
 
-.contact > main > section > div > div > form{
+.contact > section > div > div > form{
     display: flex;
     flex-direction: column;
     padding: 0px;
     width: 100%;
 }
 
-.contact > main > section > div > div > form > input{
+.contact > section > div > div > form > input{
     background-color: transparent;
     border: none;
     border-bottom:2px solid var(--primary-ligth);
@@ -361,22 +361,22 @@ CONTACT MOBILE
     outline: none;
 }
 
-.contact > main > section > div > div > form > input:nth-child(5){
+.contact > section > div > div > form > input:nth-child(5){
     padding-bottom: 60px;
 }
 
-.contact > main > section > div > div > form > input::placeholder{
+.contact > section > div > div > form > input::placeholder{
     color: var(--primary-ligth);
 }
 
-.contact > main > section > div > div > form > input:focus {
+.contact > section > div > div > form > input:focus {
     border-bottom: 3px solid var(--seconday);
 }
 
-.contact > main > section > div > div > form > input:focus::placeholder {
+.contact > section > div > div > form > input:focus::placeholder {
     color: var(--seconday);
 }
-.contact > main > section > div > div > form > button{
+.contact > section > div > div > form > button{
     border: none;
     border-radius: 20px;
     width: 30%;
@@ -388,7 +388,7 @@ CONTACT MOBILE
 
 
 
-.contact > main > footer {
+.contact > footer {
     background-color: var(--primary-dark);
     color: white;
     display: flex;
@@ -396,7 +396,7 @@ CONTACT MOBILE
     height: 40vh;
 }
 
-.contact > main > footer > div {
+.contact > footer > div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -404,35 +404,35 @@ CONTACT MOBILE
 
 
 
-.contact > main > footer > div:first-child {
+.contact > footer > div:first-child {
     align-items: center;
 } 
 
-.contact > main > footer > div:first-child > h2 {
+.contact > footer > div:first-child > h2 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
-.contact > main > footer > div:first-child > div {
+.contact > footer > div:first-child > div {
     font-weight: bold;
     display: flex;
     width: 50%;
     justify-content: space-around;
 }
 
-.contact > main > footer > div:nth-child(2){
+.contact > footer > div:nth-child(2){
     color: var(--primary-ligth);
     margin-left: 5%;
 }
 
-.contact > main > footer > div:nth-child(3){
+.contact > footer > div:nth-child(3){
     align-items:flex-end;
     justify-content: space-around;
     margin-right: 5%;
     color: var(--primary-ligth);
 }
 
-.contact > main > footer > div:nth-child(3) > div > img{
+.contact > footer > div:nth-child(3) > div > img{
     margin-right: 10px;
     width: 20%;
 }
@@ -448,7 +448,7 @@ ABOUT MOBILE
     margin: 0;
 }
 
-.about > main > div {
+.about > div {
     background-color: var(--primary);
     display: flex;
     font-family: var(--bs-font);
@@ -463,10 +463,10 @@ ABOUT MOBILE
     
 }
 
-.about > main  > div > div:first-child {
+.about  > div > div:first-child {
     display: flex;
 }
-.about > main > div > div:first-child > span {
+.about > div > div:first-child > span {
    position: relative;
    font-size: 1.5rem;
    font-weight: bold;
@@ -474,12 +474,12 @@ ABOUT MOBILE
    color: var(--bs-white);
 }
 
-.about > main  > div > div:first-child > nav {
+.about  > div > div:first-child > nav {
    position: relative;
    display: none;
 }
 
-.about > main  > div > div:first-child > nav > li{
+.about  > div > div:first-child > nav > li{
    list-style: none;
    background-color: transparent;
    margin-left: 10px;
@@ -487,7 +487,7 @@ ABOUT MOBILE
 }
 
 
-.about > main  > div > div:first-child > nav > li > a{
+.about  > div > div:first-child > nav > li > a{
    text-decoration: none;
    font-weight: 700;
    color: var(--bs-white);
@@ -495,7 +495,7 @@ ABOUT MOBILE
    
 }
 
-.about > main  > div > div:last-child > button{
+.about  > div > div:last-child > button{
    background-color: transparent;
    font-size: small;
    padding: 10px;
@@ -509,11 +509,11 @@ ABOUT MOBILE
 
 
 
-.about > main > header {
+.about > header {
     z-index: 1;
  }
 
-.about > main > div > a {
+.about > div > a {
     text-decoration: none;
     color: var(--bs-white);
     font-weight: bold;
@@ -521,7 +521,7 @@ ABOUT MOBILE
  }
 
 
-.about > main > header {
+.about > header {
     background-color: var(--primary);
     position: relative;
     display: flex;
@@ -537,7 +537,7 @@ ABOUT MOBILE
     background-position: 110% 100%;
 }
 
-.about > main > header > div:first-child {
+.about > header > div:first-child {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -545,17 +545,17 @@ ABOUT MOBILE
     z-index: -1;
 }
 
-.about > main > header > div:first-child > h1 {
+.about > header > div:first-child > h1 {
     font-size: 5rem;
     font-weight: bold;
 
 }
 
-.about > main > header > div:first-child > h1 > span{
+.about > header > div:first-child > h1 > span{
     color: var(--seconday)
 }
 
-.about > main > header > div:last-child {
+.about > header > div:last-child {
    display: flex;
    height: 100%;
    flex-direction: column;
@@ -564,14 +564,14 @@ ABOUT MOBILE
 
 }
 
-.about > main > header > div:last-child > p {
+.about > header > div:last-child > p {
    font-weight: bold;
    font-size: 0.8rem;
    width: 50%;
    text-align:left;
 }
 
-.about > main > section {
+.about > section {
     background-color: var(--primary-semi);
     color: white;
     background-image: url("/assets/icons/bg-pattern-about-2-contact-1.svg");
@@ -579,7 +579,7 @@ ABOUT MOBILE
     background-position: -10% 0%;
 }
 
-.about > main > section > div {
+.about > section > div {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -591,12 +591,12 @@ ABOUT MOBILE
     padding-top: 5%;;
 }
 
-.about > main > section > div > h2 {
+.about > section > div > h2 {
     font-size: 2rem;
 
 }
 
-.about > main > section > div > div{
+.about > section > div > div{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -606,7 +606,7 @@ ABOUT MOBILE
 
 }
 
-.about > main > section > div > div > div{
+.about > section > div > div > div{
     flex-basis: 20%;
     display: flex;
     flex-direction: column;
@@ -618,19 +618,19 @@ ABOUT MOBILE
     background-color: var(--primary-dark);
 }
 
-.about > main > section > div > div > div > span {
+.about > section > div > div > div > span {
     color: var(--primary-ligth);
     font-weight: bold;
 }
 
-.about > main > section > div > div > div > img {
+.about > section > div > div > div > img {
     border-radius: 50%;
     width: 40%;
 
     border: 3px solid var(--primary-ligth);
 }
 
-.about > main > section > div > div > div > div {
+.about > section > div > div > div > div {
     position: absolute;
     display: flex;
     align-items: center;
@@ -641,13 +641,13 @@ ABOUT MOBILE
     margin-top: 200px;
 }
 
-.about > main > section > div > div > div > div > img {
+.about > section > div > div > div > div > img {
     margin: auto;
 
     
 }
 
-.about > main > footer {
+.about > footer {
     background-color: var(--primary-dark);
     color: white;
     display: flex;
@@ -661,7 +661,7 @@ ABOUT MOBILE
     background-size: 150px;
 }
 
-.about > main > footer > div{
+.about > footer > div{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -670,11 +670,11 @@ ABOUT MOBILE
     margin-top: 5%;
 }
 
-.about > main > footer > h2{
+.about > footer > h2{
     font-size: 2rem;
 }
 
-.about > main > footer > div > img {
+.about > footer > div > img {
 
     width: 10%;
     margin: 10px;
