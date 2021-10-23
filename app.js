@@ -1,5 +1,6 @@
 const home = () => {
   return `
+  <div class="site-start">
     <header>
     <div>
         <h1>Find the best <span>talent</span></h1>
@@ -99,10 +100,12 @@ const home = () => {
     </div>
 
 </footer>
+</div>
       `;
 };
 const contact = () => {
   return `
+<div class="contact">
   <section id="home">
   <div>
       <div>
@@ -158,10 +161,12 @@ const contact = () => {
   </div>
 
 </footer>
+</div>
       `;
 };
 const about = () => {
   return `
+  <div class="about">
   <header>
   <div>
       <h1>About</h1>
@@ -239,6 +244,7 @@ const about = () => {
       </div>
 
 </footer>
+</div>
       `;
 };
 const routes = {

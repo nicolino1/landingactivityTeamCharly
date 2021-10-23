@@ -15,12 +15,12 @@ body{
     color: var(--white);
 }
 nav{
-    display: none;
+    color: var(--black);
 }
 /*---------------------------
 HEADER
 ---------------------------*/
-main > div:first-child {
+.site-start > main > div:first-child {
     position: absolute;
     height: 10vh;
     width: 100vw;
@@ -28,14 +28,14 @@ main > div:first-child {
     justify-content: space-between;
     align-items: center;
 }
-main > div:first-child > div:first-child > span{
+.site-start > main > div:first-child > div:first-child > span{
     font-size: 2rem;
     font-weight: bold;
 }
-main > div:first-child > *{
+.site-start > main > div:first-child > *{
     margin: 0 5vw;
 }
-header{
+.site-start > header{
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -47,34 +47,34 @@ header{
     background-position: bottom;
     background-size: 100%;
 }
-header > div {
+.site-start > header > div {
     margin-top: 2rem;
 }
-header > div:first-child > h1{
+.site-start > header > div:first-child > h1{
     font-size: 2.8rem;
     text-align: center;
     margin: 0 25vw;
 }
-header > div:first-child > h1 > span{
+.site-start > header > div:first-child > h1 > span{
     color: var(--seconday);    
 }
-header > div:last-child{
+.site-start > header > div:last-child{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-header > div:last-child > p {
+.site-start > header > div:last-child > p {
     text-align: center;
     margin: 0 10vw;
 }
 /*-------------------------
 HOME
 -------------------------*/
-#home{
+.site-start > #home{
     background-color: var(--primary-dark);
 }
-#home > div{
+.site-start > #home > div{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -82,17 +82,17 @@ HOME
 /*-------------------------
 HOME DIV 1
 -------------------------*/
-#home > div:first-child{
+.site-start > #home > div:first-child{
     background-image: url("../../assets/icons/bg-pattern-home-3.svg");
     background-repeat: no-repeat;
     background-position: 210% 0%;
     background-size: 70%;
 }
-#home > div:first-child > div > h2{
+.site-start > #home > div:first-child > div > h2{
     font-size: 2.2rem;
     margin: 20vh 40vw 10vh 10vw;
 }
-#home > div:first-child > div:nth-child(2){
+.site-start > #home > div:first-child > div:nth-child(2){
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,18 +100,18 @@ HOME DIV 1
     text-align: center;
     margin: 5vh 5vw;
 }
-#home > div:first-child > div > div > div:nth-child(2) > span{
+.site-start > #home > div:first-child > div > div > div:nth-child(2) > span{
     color: var(--seconday);
     font-size: 1.2rem;
     font-weight: bold;
 }
-#home > div:first-child > div > div > div > p{
+.site-start > #home > div:first-child > div > div > div > p{
     font-size: 1.1rem;
 }
 /*-------------------------------
 HOME DIV 2
 ---------------------------------*/
-#home > div:nth-child(2) {
+.site-start > #home > div:nth-child(2) {
     padding-bottom: 10vh;
     background-color: var(--primary);
     background-image: url("../../assets/icons/bg-pattern-home-5.svg");
@@ -119,7 +119,7 @@ HOME DIV 2
     background-position: right bottom;
     background-size: 50%;
 }
-#home > div:nth-child(2) > h2 {
+.site-start > #home > div:nth-child(2) > h2 {
     text-align: center;
     font-size: 2.2rem;
     padding: 20vh 10vw 10vh 10vw;
@@ -128,13 +128,13 @@ HOME DIV 2
     background-repeat: no-repeat;
     background-size: 30%;
 }
-#home > div:nth-child(2) > h2 > span {
+.site-start > #home > div:nth-child(2) > h2 > span {
     color: var(--primary-ligth);
 }
-#home > div:nth-child(2) > div{
+.site-start > #home > div:nth-child(2) > div{
     margin: 5vh 5vw;
 }
-#home > div:nth-child(2) > div > div{
+.site-start > #home > div:nth-child(2) > div > div{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,11 +145,11 @@ HOME DIV 2
     background-position: center 5%;
     padding: 5vh 0;
 }
-#home > div:nth-child(2) > div > div > img{
+.site-start > #home > div:nth-child(2) > div > div > img{
     width: 20%;
     border-radius: 50%;
 }
-#home > div:nth-child(2) > div > div > span{
+.site-start > #home > div:nth-child(2) > div > div > span{
     color: var(--primary-ligth);
     font-weight: bold;
     font-size: 1.4rem;
@@ -157,7 +157,7 @@ HOME DIV 2
 /*-------------------------------
 HOME DIV 3
 ---------------------------------*/
-#home > div:nth-child(3) {
+.site-start > #home > div:nth-child(3) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,10 +171,10 @@ HOME DIV 3
     background-size: 50%;
     color: var(--black);
 }
-#home > div:nth-child(3) > h2 {
+.site-start > #home > div:nth-child(3) > h2 {
     font-size: 2.2rem;
 }
-#home > div:nth-child(3) > button {
+.site-start > #home > div:nth-child(3) > button {
     font-size: 1.3rem;
     font-weight: bold;
     padding: 1.3rem;
@@ -185,34 +185,497 @@ HOME DIV 3
 /*-------------------------------
 FOOTER
 ---------------------------------*/
-footer{
+.site-start > footer{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: var(--primary-dark);
 }
-footer > div:first-child > h2{
+.site-start > footer > div:first-child > h2{
     text-align: center;
     font-weight: bold;
     margin: 10vh 0 5vh;
 }
-footer > *:not(h2){
+.site-start > footer > *:not(h2){
     font-size: 1.2rem;
 }
-footer > div:nth-child(1) > div > span{
+.site-start > footer > div:nth-child(1) > div > span{
     margin: 0 3vw;    
 }
-footer > div:nth-child(2){
+.site-start > footer > div:nth-child(2){
     margin: 3vh 0;
 }
-footer > div:nth-child(3) > div{
+.site-start > footer > div:nth-child(3) > div{
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 5vh;
 }
-footer > div > p{
+.site-start > footer > div > p{
     margin: 1vh;
     color: var(--gray-light);
+}
+
+/*88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
+
+CONTACT MOBILE
+
+88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888*/
+
+.contact h2, h1, p {
+    padding: 0;
+    margin: 0;
+}
+
+.contact > main > div {
+    background-color: var(--primary);
+    display: flex;
+    font-family: var(--bs-font);
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    justify-content: space-between;
+    padding: 30px;
+    
+}
+
+.contact > main  > div > div:first-child {
+    display: flex;
+}
+.contact > main > div > div:first-child > span {
+   position: relative;
+   font-size: 1.5rem;
+   font-weight: bold;
+   padding: 10px;
+   color: var(--bs-white);
+}
+
+.contact > main  > div > div:first-child > nav {
+   position: relative;
+   display: none;
+}
+
+.contact > main  > div > div:first-child > nav > li{
+   list-style: none;
+   background-color: transparent;
+   margin-left: 10px;
+   padding: 15px;
+}
+
+
+.contact > main  > div > div:first-child > nav > li > a{
+   text-decoration: none;
+   font-weight: 700;
+   color: var(--bs-white);
+   text-transform: capitalize;
+   
+}
+
+.contact > main  > div > div:last-child > button{
+   background-color: transparent;
+   font-size: small;
+   padding: 10px;
+   border: solid 1px white;
+   border-radius: 20px;
+   color: white;  
+   display: none;
+}
+
+
+
+.contact > main > header {
+    z-index: 1;
+ }
+
+.contact > main > div > a {
+    text-decoration: none;
+    color: var(--bs-white);
+    font-weight: bold;
+    font-size: var(--font-size-nav);
+ }
+
+.contact > main > section {
+     background-color: var(--primary);
+     display: flex;
+     padding-bottom: 20px;
+     justify-content: center;
+
+
+ }
+
+ .contact > main > section > div {
+     display: flex;
+     flex-direction: column;
+     width: 100vw;
+     justify-content: center;
+     align-items: center;
+
+ }
+
+
+
+ .contact > main > section > div > div{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+.contact > main > section > div > div > h1{
+    font-size: 5rem;
+}
+
+.contact > main > section > div > div > span{
+    color: var(--seconday);
+    
+    font-size: 1.5rem;
+}
+
+.contact > main > section > div > div > div{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.contact > main > section > div > div > div > p{
+    margin-left: 10px;
+}
+
+.contact > main > section > div > div > form{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    width: 100%;
+}
+
+.contact > main > section > div > div > form > input{
+    background-color: transparent;
+    border: none;
+    border-bottom:2px solid var(--primary-ligth);
+    padding: 20px;
+    outline: none;
+}
+
+.contact > main > section > div > div > form > input:nth-child(5){
+    padding-bottom: 60px;
+}
+
+.contact > main > section > div > div > form > input::placeholder{
+    color: var(--primary-ligth);
+}
+
+.contact > main > section > div > div > form > input:focus {
+    border-bottom: 3px solid var(--seconday);
+}
+
+.contact > main > section > div > div > form > input:focus::placeholder {
+    color: var(--seconday);
+}
+.contact > main > section > div > div > form > button{
+    border: none;
+    border-radius: 20px;
+    width: 30%;
+    padding: 10px;
+    color: var(--primary);
+    margin-top: 10px;
+}
+
+
+
+
+.contact > main > footer {
+    background-color: var(--primary-dark);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+}
+
+.contact > main > footer > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.contact > main > footer > div:first-child {
+    align-items: center;
+} 
+
+.contact > main > footer > div:first-child > h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact > main > footer > div:first-child > div {
+    font-weight: bold;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.contact > main > footer > div:nth-child(2){
+    color: var(--primary-ligth);
+    margin-left: 5%;
+}
+
+.contact > main > footer > div:nth-child(3){
+    align-items:flex-end;
+    justify-content: space-around;
+    margin-right: 5%;
+    color: var(--primary-ligth);
+}
+
+.contact > main > footer > div:nth-child(3) > div > img{
+    margin-right: 10px;
+    width: 20%;
+}
+
+/*8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
+
+ABOUT MOBILE
+
+88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888*/
+
+.about h2, h1, p {
+    padding: 0;
+    margin: 0;
+}
+
+.about > main > div {
+    background-color: var(--primary);
+    display: flex;
+    font-family: var(--bs-font);
+    color: white;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    justify-content: space-between;
+    padding: 30px;
+    
+}
+
+.about > main  > div > div:first-child {
+    display: flex;
+}
+.about > main > div > div:first-child > span {
+   position: relative;
+   font-size: 1.5rem;
+   font-weight: bold;
+   padding: 10px;
+   color: var(--bs-white);
+}
+
+.about > main  > div > div:first-child > nav {
+   position: relative;
+   display: none;
+}
+
+.about > main  > div > div:first-child > nav > li{
+   list-style: none;
+   background-color: transparent;
+   margin-left: 10px;
+   padding: 15px;
+}
+
+
+.about > main  > div > div:first-child > nav > li > a{
+   text-decoration: none;
+   font-weight: 700;
+   color: var(--bs-white);
+   text-transform: capitalize;
+   
+}
+
+.about > main  > div > div:last-child > button{
+   background-color: transparent;
+   font-size: small;
+   padding: 10px;
+   border: solid 1px white;
+   border-radius: 20px;
+   color: white;
+   display: none;
+
+   
+}
+
+
+
+.about > main > header {
+    z-index: 1;
+ }
+
+.about > main > div > a {
+    text-decoration: none;
+    color: var(--bs-white);
+    font-weight: bold;
+    font-size: var(--font-size-nav);
+ }
+
+
+.about > main > header {
+    background-color: var(--primary);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    user-select: none;
+    overflow: hidden;
+    background-image: url("/assets/icons/bg-pattern-about-1-mobile-nav-1.svg");
+    background-repeat: no-repeat;
+    background-position: 110% 100%;
+}
+
+.about > main > header > div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: -1;
+}
+
+.about > main > header > div:first-child > h1 {
+    font-size: 5rem;
+    font-weight: bold;
+
+}
+
+.about > main > header > div:first-child > h1 > span{
+    color: var(--seconday)
+}
+
+.about > main > header > div:last-child {
+   display: flex;
+   height: 100%;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.about > main > header > div:last-child > p {
+   font-weight: bold;
+   font-size: 0.8rem;
+   width: 50%;
+   text-align:left;
+}
+
+.about > main > section {
+    background-color: var(--primary-semi);
+    color: white;
+    background-image: url("/assets/icons/bg-pattern-about-2-contact-1.svg");
+    background-repeat: no-repeat;
+    background-position: -10% 0%;
+}
+
+.about > main > section > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 98vw;
+    background-image: url("/assets/icons/bg-pattern-home-5.svg");
+    background-repeat: no-repeat;
+    background-position: 110% 100%;
+    padding-top: 5%;;
+}
+
+.about > main > section > div > h2 {
+    font-size: 2rem;
+
+}
+
+.about > main > section > div > div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+
+}
+
+.about > main > section > div > div > div{
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    padding: 10px;
+    margin: 3%;
+    background-color: var(--primary-dark);
+}
+
+.about > main > section > div > div > div > span {
+    color: var(--primary-ligth);
+    font-weight: bold;
+}
+
+.about > main > section > div > div > div > img {
+    border-radius: 50%;
+    width: 40%;
+
+    border: 3px solid var(--primary-ligth);
+}
+
+.about > main > section > div > div > div > div {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    background-color:var(--seconday);
+    height: 30px;
+    width: 30px;
+    margin-top: 200px;
+}
+
+.about > main > section > div > div > div > div > img {
+    margin: auto;
+
+    
+}
+
+.about > main > footer {
+    background-color: var(--primary-dark);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background-image: url("/assets/icons/bg-pattern-about-4.svg");
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 150px;
+}
+
+.about > main > footer > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.about > main > footer > h2{
+    font-size: 2rem;
+}
+
+.about > main > footer > div > img {
+
+    width: 10%;
+    margin: 10px;
 }
