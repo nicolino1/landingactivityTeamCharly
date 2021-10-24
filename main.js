@@ -7,14 +7,19 @@ async function retrievePerson() {
 const query = new Parse.Query("workers");
 
 try {
-    const person = await query.get("HnV9QBnn8s");
-    const name = person.get("name");
-    const description = person.get("description");
-    // console.log(document.getElementById('db-name'))
-    // document.getElementById('db-name').innerHTML = name;
-    // document.getElementById('db-description').innerHTML = description;
-    // localStorage.setItem("name", name);
-    return {name, description}
+    const person1 = await query.get("HnV9QBnn8s");
+    const name1 = person1.get("name");
+    const description1 = person1.get("description");
+
+    const person2 = await query.get("AAq8OjmZdO");
+    const name2 = person2.get("name");
+    const description2 = person2.get("description");
+
+    const person3 = await query.get("i9H4byQcXC");
+    const name3 = person3.get("name");
+    const description3 = person3.get("description");
+
+    return {name: {name1, name2, name3}, description: {description1, description2, description3}}
 } catch (error) {
     alert(`Failed to retrieve the object, with error code: ${error.message}`);
 }

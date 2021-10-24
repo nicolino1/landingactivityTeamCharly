@@ -54,20 +54,20 @@ const home = async () => {
             <div>
                 <div>
                     <p>“The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”</p>
-                    <span>${data.name}</span>
-                    <p>${data.description}</p>
+                    <span>${data.name.name1}</span>
+                    <p>${data.description.description1}</p>
                     <img src="./assets/icons/avatar-aden.jpg" alt="profile">
                 </div>
                 <div>
                     <p>“We needed to automate our entire onboarding process. The team came in and built out the whole journey. Since going live, user retention has gone through the roof!”</p>
-                    <span>Aiysha Reese</span>
-                    <p>Founder of Manage</p>
+                    <span>${data.name.name2}</span>
+                    <p>${data.description.description2}</p>
                     <img src="./assets/icons/avatar-aiysha.jpg" alt="profile">
                 </div>
                 <div>
                     <p>“Amazing. Our team helped us build an app that delivered a new experience for hiring a physio. The launch was an instant success with 100k downloads in the first month.”</p>
-                    <span>Arthur Clarke</span>
-                    <p>Co-founder of MyPhysio</p>
+                    <span>${data.name.name3}</span>
+                    <p>${data.description.description3}</p>
                     <img src="./assets/icons/avatar-arthur.jpg" alt="profile">
                 </div>
             </div>
