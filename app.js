@@ -128,18 +128,19 @@ const contact = (props) => {
           </div>
       </div>
       <div>
-          <form  id="contact-form" onsubmit=${submitForm()}>
-          <input type="text" id="user_name" placeholder="Name">
+          <form  id="contact-form" >
+          <input type="text" name="name" id="user_name" placeholder="Name">
 
-          <input type="text" id="user_email" placeholder="Email">
+          <input type="text" name="email" id="user_email" placeholder="Email">
 
-          <input type="text" id="user_company" placeholder="Company">
+          <input type="text" name="company" id="user_company" placeholder="Company">
 
-          <input type="text" id="title" placeholder="Title">
+          <input type="text" name="title" id="title" placeholder="Title">
 
-          <input type="text" id="message" placeholder="Message">
-              <button  
-              >submit</button>
+          <input type="text" name="message" id="message" placeholder="Message">
+              <button  type="submit" id="buttonsubmit">
+              submit
+              </button>
           </form>
       </div>
   </div>
@@ -273,22 +274,33 @@ const onNavigate = async (_pathname) => {
   window.history.pushState(null, _pathname, _pathname);
   rootDiv.innerHTML = await routes[_pathname]();
  
+
+  _pathname == '/contact' ? submitForm() : false; 
 };
 
 const submitForm = () => {
-    console.log("hola")
-    let tempParams;
-    if(document.getElementsByClassName(".contact")){
-      tempParams = {
-          user_name : document.getElementById("user_name")?.value,
-          user_email : document.getElementById("user_email")?.value,
-          user_company : document.getElementById("user_company")?.value,
-          title : document.getElementById("title")?.value,
-          message : document.getElementById("message")?.value,
-      }
-      console.log(tempParams)
-      sendMail(tempParams);
+    let contact = document.getElementById('contact-form');
+    if(contact) {
+        document.getElementById("buttonsubmit").addEventListener("click", (event) => {
+            emailjs.init("user_Dg7hyAbIywtfNfNxk1w0Y");
+            event.preventDefault()
+    
+            let tempParams;
+    
+            tempParams = {
+                user_name : document.getElementById("user_name")?.value,
+                user_email : document.getElementById("user_email")?.value,
+                user_company : document.getElementById("user_company")?.value,
+                title : document.getElementById("title")?.value,
+                message : document.getElementById("message")?.value,
+            }
+            
+            sendMail(tempParams);
+          });
+    
     }
+
+    
 }
 
 // const createProfilePicture = (props) => {

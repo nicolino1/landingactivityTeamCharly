@@ -25,12 +25,10 @@ try {
 }
 }  
 
- (function() {
-     emailjs.init("user_Dg7hyAbIywtfNfNxk1w0Y");
- })();
+
 
  function sendMail(params){
-
+    
 
      emailjs.send(`service_dxt4ok8`, `contact_form`, params)
     .then(function(res){
