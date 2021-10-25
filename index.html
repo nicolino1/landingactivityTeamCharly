@@ -10,33 +10,48 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script> 
+    
 
 </head>
 </html>
 <body>
     <main>
-        <div>
+        <div class="navbar">
             <div>
                 <nav>
                     <h1>myteam</h1>
                     <div>
                         <button onclick="onNavigate('/');">home</button>
-                        <button onclick="onNavigate('/about');">About</button>
-                        <button onclick="onNavigate('/contact');">contact</button>
+                        <button onclick="onNavigate('/about');">About</button>                        
                     </div>
+
                 <nav>
-              
+                    
 
             </div>
+            <div>
+                <button onclick="onNavigate('/contact');">contact</button>
+            </div>
         </div>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script>
+
+        </script>
 
         <script src="main.js"></script>
+
+        
         
         <div id="root" ></div>
         
-        <script src="app.js"> 
+        
+        <script src="app.js" onload="onNavigate('/')"> 
             
         </script>
+
+
+
+    
        
     </main>
 </body>

@@ -24,3 +24,29 @@ try {
     alert(`Failed to retrieve the object, with error code: ${error.message}`);
 }
 }  
+
+ (function() {
+     emailjs.init("user_Dg7hyAbIywtfNfNxk1w0Y");
+ })();
+
+ function sendMail(params){
+
+
+     emailjs.send(`service_dxt4ok8`, `contact_form`, params)
+    .then(function(res){
+         console.log("success", res.status);
+    }) 
+ }
+
+// window.onload = function() {
+//     console.log("hola")
+//     document.getElementById('contact-form')?.addEventListener('submit', function(event) {
+//         emailjs.sendForm("service_dxt4ok8","contact_form", this)
+//             .then(function() {
+//                 console.log('SUCCESS!');
+//             }, function(error) {
+//                 console.log('FAILED...', error);
+//             });
+      
+//     });
+// }

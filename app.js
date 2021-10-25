@@ -1,7 +1,7 @@
-const home = async () => {
+const home = async (props) => {
     const data = await retrievePerson();
   return `
-    <div>
+    <div class="site-start">
         <header>
         <div>
             <h1>Find the best <span>talent</span></h1>
@@ -104,8 +104,10 @@ const home = async () => {
     </div>
       `;
 };
-const contact = () => {
+const contact = (props) => {
+    console.log(props);
   return `
+  <div class="contact">
   <section id="home">
   <div>
       <div>
@@ -126,13 +128,18 @@ const contact = () => {
           </div>
       </div>
       <div>
-          <form>
-              <input placeholder="Name" type="text">
-              <input placeholder="Email Address" type="text">
-              <input placeholder="Company Name" type="text">
-              <input placeholder="Title" type="text">
-              <input placeholder="Message" type="text">
-              <button>submit</button>
+          <form  id="contact-form" onsubmit=${submitForm()}>
+          <input type="text" id="user_name" placeholder="Name">
+
+          <input type="text" id="user_email" placeholder="Email">
+
+          <input type="text" id="user_company" placeholder="Company">
+
+          <input type="text" id="title" placeholder="Title">
+
+          <input type="text" id="message" placeholder="Message">
+              <button  
+              >submit</button>
           </form>
       </div>
   </div>
@@ -161,10 +168,12 @@ const contact = () => {
   </div>
 
 </footer>
+</div>
       `;
 };
-const about = () => {
+const about = (props) => {
   return `
+  <div class="about">
   <header>
   
   <div>
@@ -243,6 +252,7 @@ const about = () => {
       </div>
 
 </footer>
+</div>
       `;
 };
 
@@ -254,11 +264,32 @@ const routes = {
 
 const rootDiv = document.getElementById("root");
 
+document.getElementById("root").addEventListener("click", function(event){
+    event.preventDefault()
+  });
+
 const onNavigate = async (_pathname) => {
   window.history.replaceState(null, null, _pathname);
   window.history.pushState(null, _pathname, _pathname);
   rootDiv.innerHTML = await routes[_pathname]();
+ 
 };
+
+const submitForm = () => {
+    console.log("hola")
+    let tempParams;
+    if(document.getElementsByClassName(".contact")){
+      tempParams = {
+          user_name : document.getElementById("user_name")?.value,
+          user_email : document.getElementById("user_email")?.value,
+          user_company : document.getElementById("user_company")?.value,
+          title : document.getElementById("title")?.value,
+          message : document.getElementById("message")?.value,
+      }
+      console.log(tempParams)
+      sendMail(tempParams);
+    }
+}
 
 // const createProfilePicture = (props) => {
 //     const mainDiv = document.createElement('div');

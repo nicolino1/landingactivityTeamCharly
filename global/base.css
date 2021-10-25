@@ -3,6 +3,21 @@
     width: device-width;
 }
 
+:root{
+    --primary-ligth: #7dc3c5;
+    --primary: #014e58;
+    --primary-semi: #03363d;
+    --primary-dark: #002528;
+    --seconday: #f67e7f;
+    --white: #fff;
+    --black: #000;
+    --gray-light: #bbbbbb;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --light: #f8f9fa;
+    --dark: #212529;
+}
+
 html,
 body {
 padding: 0;
@@ -19,6 +34,66 @@ text-decoration: none;
 box-sizing: border-box;
 }
 
+
+h2, h1, p {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    background-color: var(--primary);
+    display: flex;
+    font-family: var(--bs-font);
+    color: white;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    justify-content: space-around;
+    padding: 30px;
+    
+}
+
+.navbar > div:first-child {
+    display: flex;
+}
+.navbar > div:first-child > span {
+   position: relative;
+   font-size: 1.5rem;
+   font-weight: bold;
+   padding: 10px;
+   color: var(--bs-white);
+}
+
+.navbar > div:first-child > nav {
+   position: relative;
+   display: flex;
+}
+
+
+
+
+.navbar > div:first-child > nav > div > button{
+    background-color: transparent;
+    border: none;
+    font-weight: 700;
+    color: var(--bs-white);
+    text-transform: capitalize;
+    margin-left: 10px;
+   
+}
+
+.navbar > div:last-child > button{
+   background-color: transparent;
+   font-size: small;
+   padding: 10px;
+   border: solid 1px white;
+   border-radius: 20px;
+   color: white;
+
+   
+}
 
 
 
