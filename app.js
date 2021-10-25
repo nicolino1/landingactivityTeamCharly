@@ -1,4 +1,4 @@
-const home = async (props) => {
+const home = async () => {
     const data = await retrievePerson();
   return `
     <div class="site-start">
@@ -104,8 +104,7 @@ const home = async (props) => {
     </div>
       `;
 };
-const contact = (props) => {
-    console.log(props);
+const contact = () => {
   return `
   <div class="contact">
   <section id="home">
@@ -171,7 +170,7 @@ const contact = (props) => {
 </div>
       `;
 };
-const about = (props) => {
+const about = () => {
   return `
   <div class="about">
   <header>
@@ -276,28 +275,26 @@ const onNavigate = async (_pathname) => {
 };
 
 const submitForm = () => {
-    console.log("hola")
     let tempParams;
     if(document.getElementsByClassName(".contact")){
       tempParams = {
-          user_name : document.getElementById("user_name")?.value,
-          user_email : document.getElementById("user_email")?.value,
-          user_company : document.getElementById("user_company")?.value,
-          title : document.getElementById("title")?.value,
-          message : document.getElementById("message")?.value,
+          user_name : document.getElementById("user_name") ? document.getElementById("user_name").value : "",
+          user_email : document.getElementById("user_email") ? document.getElementById("user_email").valuev : "",
+          user_company : document.getElementById("user_company") ? document.getElementById("user_company").value : "",
+          title : document.getElementById("title") ? document.getElementById("title").value : "",
+          message : document.getElementById("message") ? document.getElementById("message").value : "",
       }
-      console.log(tempParams)
       sendMail(tempParams);
     }
 }
 
-// const createProfilePicture = (props) => {
+// const createProfilePicture = () => {
 //     const mainDiv = document.createElement('div');
 //     const imgElement = document.createElement('img');
-//     imgElement.src = props.imgSrc;
-//     imgElement.alt = props.imgAlt;
+//     imgElement.src = .imgSrc;
+//     imgElement.alt = .imgAlt;
 //     const spanElement = document.createElement('span');
-//     spanElement.textContent = props.name;
+//     spanElement.textContent = .name;
 //     mainDiv.appendChild(imgElement);
 //     mainDiv.appendChild(spanElement);
 //     return mainDiv;
