@@ -1,0 +1,22 @@
+{
+  "name": "landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolino1/landingactivityTeamCharly.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolino1/landingactivityTeamCharly/issues"
+  },
+  "homepage": "https://github.com/nicolino1/landingactivityTeamCharly#readme",
+  "dependencies": {
+    "parse": "^3.3.1"
+  }
+}

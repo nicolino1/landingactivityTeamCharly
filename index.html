@@ -5,28 +5,53 @@
     <link rel="stylesheet" href="./skin.css" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet"
-        href="https://urldefense.com/v3/__https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css__;!!CyYWWBA!WpbepmW4eYIR5oaLvjS93MKJOf5CmTp7VJ4gMkptmKpnXz8eGtsazyUyN8rOjSkbz3m-RSo$">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css__;!!CyYWWBA!WpbepmW4eYIR5oaLvjS93MKJOf5CmTp7VJ4gMkptmKpnXz8eGtsazyUyN8rOjSkbz3m-RSo$">
         <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
-    </head>
+    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script> 
+    
+
+</head>
 </html>
 <body>
     <main>
-        <div>
+        <div class="navbar">
             <div>
                 <nav>
                     <h1>myteam</h1>
                     <div>
-                        <buttom onclick="onNavigate('/');">home</buttom>
-                        <buttom onclick="onNavigate('/about');">About</buttom>
-                        <buttom onclick="onNavigate('/contact');">contact</buttom>
+                        <button onclick="onNavigate('/');">home</button>
+                        <button onclick="onNavigate('/about');">About</button>                        
                     </div>
+
                 <nav>
-              
-                </div>
+                    
+
             </div>
-            <div id="root"></div>
-       <script src="./app.js"></script>
+            <div>
+                <button onclick="onNavigate('/contact');">contact</button>
+            </div>
+        </div>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script>
+
+        </script>
+
+        <script src="main.js"></script>
+
+        
+        
+        <div id="root" ></div>
+        
+        
+        <script src="app.js" onload="onNavigate('/')"> 
+            
+        </script>
+
+
+
+    
+       
     </main>
 </body>
