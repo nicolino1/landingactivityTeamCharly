@@ -1,1 +1,1 @@
-try{doSomething()}catch(e){Rollbar.error("Something went wrong",e)}let e;Rollbar.error(e,function(r,o){r?console.log("Error while reporting error to Rollbar: ",e):console.log("Error successfully reported to Rollbar. UUID:",o.result.uuid)});
+try{sendMail()}catch(e){Rollbar.error("Something went wrong",e)}let e;Rollbar.error(e,function(r,o){r?console.log("Error while reporting error to Rollbar: ",e):console.log("Error successfully reported to Rollbar. UUID:",o.result.uuid)});
