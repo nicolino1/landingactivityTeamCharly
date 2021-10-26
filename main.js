@@ -26,12 +26,16 @@ try {
 }  
 
 
-
- function sendMail(params){
+try {
+    function sendMail(params){
      
-     emailjs.send(`service_dxt4ok8`, `contact_form`, params)
-    .then(function(res){
-         console.log("success", res.status);
-    }) 
- }
+        emailjs.send(`service_dxt4ok8`, `contact_form`, params)
+       .then(function(res){
+            console.log("success", res.status);
+       }) 
+    }
+  } catch (e) {
+    Rollbar.error("Something went wrong", e);
+  }
+
 

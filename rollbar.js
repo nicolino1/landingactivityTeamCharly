@@ -1,9 +1,9 @@
  // Caught errors
- try {
-    doSomething();
-  } catch (e) {
-    Rollbar.error("Something went wrong", e);
-  }
+//  try {
+//     doSomething();
+//   } catch (e) {
+//     Rollbar.error("Something went wrong", e);
+//   }
   
   let e;
 
