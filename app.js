@@ -298,24 +298,5 @@ const submitForm = () => {
             sendMail(tempParams);
           });
     
-    }
-
-    
+    }   
 }
-
-// const createProfilePicture = (props) => {
-//     const mainDiv = document.createElement('div');
-//     const imgElement = document.createElement('img');
-//     imgElement.src = props.imgSrc;
-//     imgElement.alt = props.imgAlt;
-//     const spanElement = document.createElement('span');
-//     spanElement.textContent = props.name;
-//     mainDiv.appendChild(imgElement);
-//     mainDiv.appendChild(spanElement);
-//     return mainDiv;
-// }
-
-// listaPersonas.forEach(persona => {
-//     sectionElement = document.querySelector('section');
-//     sectionElement.appendChild(createProfilePict)
-// })
