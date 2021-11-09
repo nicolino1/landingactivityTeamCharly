@@ -369,6 +369,7 @@ CONTACT MOBILE
 .contact > section {
      background-color: var(--primary);
      display: flex;
+     height: 100vh;
      padding-bottom: 20px;
      justify-content: center;
 
@@ -463,6 +464,10 @@ CONTACT MOBILE
     display: flex;
     flex-direction: column;
     height: 40vh;
+}
+
+.contact > footer > * {
+    margin: 2vh 0;
 }
 
 .contact > footer > div {
@@ -565,7 +570,6 @@ ABOUT MOBILE
 
 .about > header > div:last-child {
    display: flex;
-   height: 100%;
    flex-direction: column;
    justify-content: center;
    align-items: center;
@@ -574,7 +578,8 @@ ABOUT MOBILE
 
 .about > header > div:last-child > p {
    font-weight: bold;
-   font-size: 0.8rem;
+   font-size: 1.4rem;
+   margin: 10vw 10vw 0;
    width: 50%;
    text-align:left;
 }
@@ -683,7 +688,6 @@ ABOUT MOBILE
 }
 
 .about > footer > div > img {
-
-    width: 10%;
-    margin: 10px;
+    width: 20%;
+    margin: 20px;
 }
